@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignments &amp; Feedback</title>
+<title>readme</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,72 +18,40 @@ ul.task-list{list-style: none;}
 </style>
 
 
-<script src="assignments_files/libs/clipboard/clipboard.min.js"></script>
-<script src="assignments_files/libs/quarto-html/quarto.js"></script>
-<script src="assignments_files/libs/quarto-html/popper.min.js"></script>
-<script src="assignments_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="assignments_files/libs/quarto-html/anchor.min.js"></script>
-<link href="assignments_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="assignments_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="assignments_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="assignments_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="assignments_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body>
+<body class="fullcontent">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">Contents</h2>
-   
-  <ul>
-  <li><a href="#adding-assignments" id="toc-adding-assignments" class="nav-link active" data-scroll-target="#adding-assignments">Adding Assignments</a></li>
-  </ul>
-</nav>
-</div>
+
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Assignments &amp; Feedback</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-    
-  </div>
-  
-
-</header>
-
-<section id="adding-assignments" class="level2">
-<h2 class="anchored" data-anchor-id="adding-assignments">Adding Assignments</h2>
-<p>To add a new assignment, follow these steps.</p>
-<ol type="1">
-<li>Go to the assignments page and click on Create an Assignment (or&nbsp; “New Assignment” as a button if you already have some in the class).</li>
-</ol>
-<p><img src="media/Assignment1.png" class="img-fluid"></p>
-<ol start="2" type="1">
-<li>Set up the basic information about the assignment.&nbsp;</li>
-</ol>
-<p><img src="media/Assignment2.png" class="img-fluid"></p>
-<ol start="3" type="1">
-<li>Select a repository to be used as the base repo for this assignment.&nbsp; If you have not already done so, it will prompt you to make the assignment repository a “template”.&nbsp;</li>
-</ol>
-<p><img src="media/Assignment3.png" class="img-fluid"></p>
-<ol start="4" type="1">
-<li><p>Finalize it by setting up the ability to submit feedback via pull requests.&nbsp; At some point it would be good to set up some auto grading tests, but I’ll have to come back to that later.</p>
-<p><img src="media/Assignment4.png" class="img-fluid"></p></li>
-<li><p>The next page will show the assignment in classroom.&nbsp; The link needs to be shared with the students so they can “Accept” the assignment and clone their own copy.</p></li>
-</ol>
-<p><img src="media/Assignment5.png" class="img-fluid"></p>
-<p>You now have an assignment uploaded and ready for deployment.</p>
+<section id="git-github-and-github-classroom" class="level1">
+<h1>Git, GitHub, and GitHub Classroom</h1>
+<p>Git, GitHub, and GitHub Classroom are the foundation for how this class is to be offered.</p>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><a href="https://dyerlabteaching.github.io/Github-Classroom/slides.html#/title-slide">Slides</a> for the topic.</li>
+<li><a href="https://dyerlabteaching.github.io/Github-Classroom/setup.html">Setup</a> of the Google Classroom environment for a class.</li>
+<li><a href="https://dyerlabteaching.github.io/Github-Classroom/assignments.html">Assignments</a> added to the classroom. Each assignment is its own GitHub repository.</li>
+<li><a href="https://dyerlabteaching.github.io/Github-Classroom/assessment.html">Assessment</a> of student work through cloning and pushing with feedback.</li>
+</ul>
+</section>
 </section>
 
 </main>
@@ -183,20 +151,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // default icon
-          link.classList.add("external");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
