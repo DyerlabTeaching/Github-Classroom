@@ -214,11 +214,84 @@ Just like "Canvas" but using Git and Github For interactions.
 Each 'Assignment' is located in its own GitHub Repository.
 
 :::{.incremental}
+- Each individual must be *registered* with the class (e.g., I need your GitHub login).
 - One source of data, documents, etc.
+- I will post a link to the GitHub Classroom assignment on Canvas. 
 - You **clone** the assignment and it makes a special version for you.
 - You work on it and when you are done (or want to get some feedback), you **push** it back to GitHub.
 - In GitHub, the code can be examined and commented on.  Any changes I make are then pushed back and you can see them.
 :::
 
 
-## Example - 
+## Example Assignment Workflow
+
+
+![](media/Assignment6.png)
+
+## Example Assignment Workflow
+
+You will work on the assignment.  Commit changes as necessary.  And when you are finished, you will push it back to the original repository.
+
+
+![](media/Assignment7.png)
+
+
+## Assessment & Diffs {.scrollable}
+
+![](media/Assignment8.png)
+
+
+
+## Comments and Feedback
+
+GitHub Classroom has the ability to facilitate feedback and chat based upon each push and commit. The dialog box here opens this ability.
+
+![](media/Assignment9.png)
+
+
+## Dialog {.scrollable}
+
+![](media/Assignment10.png)
+
+
+## Dialog 
+
+Which can include all kinds of feedback.
+
+![](media/Assignment11.png)
+
+
+## More In-Depth Evaluation
+
+Some—OK almost all—assignments are more complicated and need more than just a visual inspection of a text/markdown file.
+
+:::{.incremental}
+1. Instructor can clone your repository.
+2. Run code and render output.
+3. Provide feedback and assessment.
+4. Push back to repository.
+:::
+
+
+## Instructor Commit Messages {.scrollable}
+
+![](media/Assignment15.png)
+
+
+## Kept in Commit Record {.scrollable}
+
+![](media/Assignment19.png)
+
+
+
+## Questions
+
+::: {layout-ncol="2"}
+If you have any questions, please feel free to either post them as an "Issue" on your copy of this GitHub Repository, post to the [Canvas](https://canvas.vcu.edu) discussion board for the class, or drop me an [email](mailto://rjdyer@vcu.edu).
+
+![](media/peter_sellers.gif){.middle fig-alt="Peter Sellers looking bored" fig-align="center" width="500"}
+
+:::
+
+
+
