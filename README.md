@@ -5,5 +5,5 @@ Git, GitHub, and GitHub Classroom are the foundation for how this class is to be
 
 ## Resources
 
-- [Slides](https://dyerlabteaching/githubclassroom/slides.html) for the topic.
+- [Slides](https://dyerlabteaching.github.io/slides.html) for the topic.
 
