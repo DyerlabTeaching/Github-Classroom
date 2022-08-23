@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Google Classroom Setup</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="setup_files/libs/clipboard/clipboard.min.js"></script>
+<script src="setup_files/libs/quarto-html/quarto.js"></script>
+<script src="setup_files/libs/quarto-html/popper.min.js"></script>
+<script src="setup_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="setup_files/libs/quarto-html/anchor.min.js"></script>
+<link href="setup_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="setup_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="setup_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="setup_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="setup_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#setting-it-up" id="toc-setting-it-up" class="nav-link active" data-scroll-target="#setting-it-up">Setting It Up</a></li>
+  <li><a href="#general-workflow" id="toc-general-workflow" class="nav-link" data-scroll-target="#general-workflow">General Workflow</a></li>
+  <li><a href="#adding-students" id="toc-adding-students" class="nav-link" data-scroll-target="#adding-students">Adding Students</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Google Classroom Setup</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="setting-it-up" class="level1">
+<h1>Setting It Up</h1>
+<p>Go to <a href="http://classroom.github.com">classroom.github.com</a> and create a new classroom for the class you are using.&nbsp; You will have to log in with your github account.&nbsp; In these examples, I am using the <a href="https://github.com/dyerlab">dyerlab</a> account as the instructor as it is the one with the connection to my <a href="https://github.com/DyerlabTeaching">DyerlabTeaching</a> organization.&nbsp; I have a second account <a href="https://github.com/rodneydyer">rodneydyer</a> that will be used to demonstrate the ‘students perspective’ on the the setup.</p>
+<p><img src="media/Setup1.png" class="img-fluid"></p>
+</section>
+<section id="general-workflow" class="level1">
+<h1>General Workflow</h1>
+<p>I have set up this class such that we have individual learning topics, each of which is self-contained.&nbsp; These topics each have their own GitHub repository on <a href="https://github.com/DyerlabTeaching">DyerlabTeaching</a> and are made using a template teaching repository that is set up as an RStudio project with markdown for slides, a longer narrative on the topic, in-class activity, and the homework.&nbsp; Any additional supplementary materials necessary for the topic (e.g., cheat sheets, data sets, manuscripts, etc.) are also supplied in the repository.</p>
+<p>The general workflow is as follows:</p>
+<ol type="1">
+<li><p>Once the repository is ready, I add it to the classroom (see below)</p></li>
+<li><p>I send the students the link through google classroom for the topic repository.</p></li>
+<li><p>Google Classroom allows them to clone a version of it and download it to their own computer.&nbsp;</p></li>
+<li><p>They now have access to all the teaching materials as well as homework for this topic.</p></li>
+<li><p>They do the work in RStudio on their copy of the repository and then check in and push their copies back to GitHub.</p></li>
+<li><p>I can then see their work, make comments, and corrections as necessary, and grade their individual work.</p></li>
+</ol>
+</section>
+<section id="adding-students" class="level1">
+<h1>Adding Students</h1>
+<p>Once you have set up your classroom set up, you can add students.&nbsp; There are instructions on how to link to Canvas (follow them exactly) but you will also need to have the students share their GitHub user names with you.&nbsp; Here is how I did it manually.&nbsp;</p>
+<p>You will need to have some student identifier or name, one per line in the text box.</p>
+<p><img src="media/Setup3.png" class="img-fluid"></p>
+<p>Now you should see that you have new students in the class (a class of one in my case).&nbsp; This is where you’ll have to link each student with their Github account identification.</p>
+<p><img src="media/Setup4.png" class="img-fluid"></p>
+<p>You’ll be able to link these once you have sent out an invitation to an assignment (shown in the next section).&nbsp;</p>
+<p><br>
+</p>
+<p>If you have not added any assignments and students have not accepted any of them yet, you will get this dialog and you can come back and link the accounts then.</p>
+<p><img src="media/Setup5.png" class="img-fluid"></p>
+<p>If there are subsequent back-and-forth that needs to happen, you’ll do the same thing.&nbsp;</p>
+<ul>
+<li><p>Make changes</p></li>
+<li><p>Commit</p></li>
+<li><p>Push with message</p></li>
+</ul>
+<p>The GitHub Repository becomes something that is share between you and the instructor and you can work collaboratively on it.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Grading</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="assessment_files/libs/clipboard/clipboard.min.js"></script>
+<script src="assessment_files/libs/quarto-html/quarto.js"></script>
+<script src="assessment_files/libs/quarto-html/popper.min.js"></script>
+<script src="assessment_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="assessment_files/libs/quarto-html/anchor.min.js"></script>
+<link href="assessment_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="assessment_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="assessment_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="assessment_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="assessment_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#receiving-assignments" id="toc-receiving-assignments" class="nav-link active" data-scroll-target="#receiving-assignments">Receiving Assignments</a>
+  <ul class="collapse">
+  <li><a href="#viewing-assessment-by-diffs" id="toc-viewing-assessment-by-diffs" class="nav-link" data-scroll-target="#viewing-assessment-by-diffs">Viewing &amp; Assessment By Diffs</a></li>
+  <li><a href="#viewing-assessment-by-cloning" id="toc-viewing-assessment-by-cloning" class="nav-link" data-scroll-target="#viewing-assessment-by-cloning">Viewing &amp; Assessment By Cloning</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Grading</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="receiving-assignments" class="level2">
+<h2 class="anchored" data-anchor-id="receiving-assignments">Receiving Assignments</h2>
+<p>Students will accept the assignment and clone the repository locally.&nbsp; They will then do work on it, and when they are done they will commit the changes and push the content back up to the repository.&nbsp; In the classroom, you will see this in the Assignment Page.&nbsp; Click on it and you will have a list of students and their status (accepted the assignment, pushed, etc.).</p>
+<p>In this example, using the Markdown repository, the student has 3 commits associated with it.&nbsp; Click on these first.</p>
+<p><img src="media/Assignment6.png" class="img-fluid"></p>
+<p>You’ll see that the GitHub-Classroom [bot] did 2 of the commits getting the repository set up for the student but after those, all the remaining commits are from the student.</p>
+<p><img src="media/Assignment7.png" class="img-fluid"></p>
+<section id="viewing-assessment-by-diffs" class="level3">
+<h3 class="anchored" data-anchor-id="viewing-assessment-by-diffs">Viewing &amp; Assessment By Diffs</h3>
+<p>If you click on the student’s commit ID (the 39fd9e2), you’ll see a DIFF of the the changes that the student made (in green on the right pane) relative to the most recent version (on the left in red).</p>
+<p><img src="media/Assignment8.png" class="img-fluid"></p>
+<p>If this is sufficient information for assessment, you can do it by looking here.&nbsp; If you need to do more in-depth work (such as seeing if it renders to HTML and the calculated answers, images, and tables are all correct) then you’ll have to go further.&nbsp;</p>
+<p>Let’s go back to the Markdown page listing all the students.&nbsp;</p>
+<p><img src="media/Assignment9.png" class="img-fluid"></p>
+<p>To the right of the 3 commits, is a dialog box that you can use to open communication with the student.&nbsp; At the bottom, you can send a message to the student.</p>
+<p><img src="media/Assignment10.png" class="img-fluid"></p>
+<p>If you want to be cheeky, you can even drag in images and GitHub will integrate them into the feedback.</p>
+<p><img src="media/Assignment11.png" class="img-fluid"></p>
+<p>When you send this message, it is displayed in the student’s GitHub Inbox.</p>
+<p><img src="media/Assignment12.png" class="img-fluid"></p>
+<p>And they can reply as necessary.</p>
+</section>
+<section id="viewing-assessment-by-cloning" class="level3">
+<h3 class="anchored" data-anchor-id="viewing-assessment-by-cloning">Viewing &amp; Assessment By Cloning</h3>
+<p>If there are more substantiative changes to be made or if the nature of the assignment is sufficiently complex such that simply looking at the markdown is not sufficient for you to determine if they did what was asked you’ll want to clone their repository and build the markdown yourself.&nbsp; Any changes you make to the files (if you commit and push them back) will be visible to the student.&nbsp; So, if you need to help them understand where they didn’t get the right answer or code to work, you can provide it.&nbsp;</p>
+<p>To do this, go back to the Assignment page and select “Go to rep”</p>
+<p><img src="media/Assignment13.png" class="img-fluid"></p>
+<p>Then you can clone their version to your machine, open it up and make changes.&nbsp; For this example, I’ll correct their obviously incorrect movie rankings...</p>
+<p><img src="media/Assignment14.png" class="img-fluid"></p>
+<p>Make the changes to all files and then commit and describe the nature of your changes in the commit message.</p>
+<p><img src="media/Assignment15.png" class="img-fluid"></p>
+<p>When you push it back up to GitHub, the student will get a new message in their Inbox that shows the changes to their files.</p>
+<p><img src="media/Assignment16.png" class="img-fluid"></p>
+<p>If they go back to RStudio, they will have to Pull these changes down to the local copy (in the Git pane there is a button that says Pull).</p>
+<p><img src="media/Assignment17.png" class="img-fluid"></p>
+<p>In the same pane, there is also a button labeled “History”</p>
+<p><img src="media/Assignment18.png" class="img-fluid"></p>
+<p>which has the push/pull history in it with all the comments as well.&nbsp; Anyone with an updated pull on the repository will have all these comments.</p>
+<p><img src="media/Assignment19.png" class="img-fluid"></p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

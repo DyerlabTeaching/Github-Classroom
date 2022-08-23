@@ -203,3 +203,22 @@ With a [GitHub](https://github.com) repository, several people can contribute to
 Just like "Canvas" but using Git and Github For interactions.
 
 ![](media/gh_classroom.png)
+
+
+
+
+
+
+## Assignments
+
+Each 'Assignment' is located in its own GitHub Repository.
+
+:::{.incremental}
+- One source of data, documents, etc.
+- You **clone** the assignment and it makes a special version for you.
+- You work on it and when you are done (or want to get some feedback), you **push** it back to GitHub.
+- In GitHub, the code can be examined and commented on.  Any changes I make are then pushed back and you can see them.
+:::
+
+
+## Example - 

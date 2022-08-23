@@ -1,0 +1,30 @@
+---
+title: "Assignments & Feedback"
+editor: source
+---
+
+## Adding Assignments
+
+To add a new assignment, follow these steps.
+
+1.  Go to the assignments page and click on Create an Assignment (or  "New Assignment" as a button if you already have some in the class).
+
+![](media/Assignment1.png)
+
+2.  Set up the basic information about the assignment. 
+
+![](media/Assignment2.png)
+
+3.  Select a repository to be used as the base repo for this assignment.  If you have not already done so, it will prompt you to make the assignment repository a "template". 
+
+![](media/Assignment3.png)
+
+4.  Finalize it by setting up the ability to submit feedback via pull requests.  At some point it would be good to set up some auto grading tests, but I'll have to come back to that later.
+
+    ![](media/Assignment4.png)
+
+5.  The next page will show the assignment in classroom.  The link needs to be shared with the students so they can "Accept" the assignment and clone their own copy.
+
+![](media/Assignment5.png)
+
+You now have an assignment uploaded and ready for deployment.

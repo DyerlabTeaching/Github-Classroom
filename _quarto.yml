@@ -15,6 +15,7 @@ format:
     citations-hover: true
     footnotes-hover: true
     link-external-icon: true
+    self-contained: false
   revealjs:
     self-contained: false
     code-fold: false
