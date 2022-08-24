@@ -30,10 +30,9 @@ title-slide-attributes:
 
 Git is a distributed *versioning system*
 
-
 :::{.incremental}
 - Easy for collaboration.  
-- Easy track changes in your projects, documents, and code.  
+- Easy track entire history of changes in your projects, documents, and code.  
 - Complete history of all changes.
 - Easily revert to previous instances.
 - Project Based.
