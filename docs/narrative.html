@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Git &amp; GitHub</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="narrative_files/libs/clipboard/clipboard.min.js"></script>
+<script src="narrative_files/libs/quarto-html/quarto.js"></script>
+<script src="narrative_files/libs/quarto-html/popper.min.js"></script>
+<script src="narrative_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="narrative_files/libs/quarto-html/anchor.min.js"></script>
+<link href="narrative_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="narrative_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="narrative_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="narrative_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="narrative_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#git-github" id="toc-git-github" class="nav-link active" data-scroll-target="#git-github">“Git &amp; Github”</a>
+  <ul class="collapse">
+  <li><a href="#rationale" id="toc-rationale" class="nav-link" data-scroll-target="#rationale">Rationale</a></li>
+  <li><a href="#workflows" id="toc-workflows" class="nav-link" data-scroll-target="#workflows">Workflows</a></li>
+  <li><a href="#github-classroom" id="toc-github-classroom" class="nav-link" data-scroll-target="#github-classroom">GitHub Classroom</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Git &amp; GitHub</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="git-github" class="level1">
+<h1>“Git &amp; Github”</h1>
+<blockquote class="blockquote">
+<p>Git is a tool for collaboration and to help you keep your stuff organized and reduce the amount of suckiness that is in your life. Seriously. It will allow you to keep distributed projects organized, facilitate easy collaborations, and protect your data and writings from becoming lost to time, vendor lock in, misplaced laptops, and all other maladies that plague scientists.</p>
+</blockquote>
+<section id="rationale" class="level2">
+<h2 class="anchored" data-anchor-id="rationale">Rationale</h2>
+<p>Sometimes a picture is worth a thousand words (or in this case at least a hundred file versions). We must seek harmony in our lives that reduces complexity and associated unnecessary confusion and anxiety. Doing things like the following, work only in opposition to these goals.</p>
+<p><img src="media/file_naming.png" class="img-fluid"></p>
+</section>
+<section id="workflows" class="level2">
+<h2 class="anchored" data-anchor-id="workflows">Workflows</h2>
+<p>Ultimately, <code>git</code> is a program that lives on your computer. It serves to allow you to initialize a repository—a database of all changes to your project if you will.</p>
+<p><img src="media/hero.svg" class="img-fluid"></p>
+<p>For our purposes, we will start initializing a repository on <a href="https://github.com">GitHub</a> and then pull it down to our computer in <a href="https://rstudio.com">RStudio</a>.</p>
+<p>Git can be accessed through either the console (command line) or through buttons on the RStudio interface. For our purposes, we will use RStudio first and then as you become more proficient, you can venture into the console (there is a command line console in RStudio next to the R console that is named <code>Terminal</code>).</p>
+<p>If you look into the pane with the Environment Tabs, you will see that there is one named Git. If you select this one (AND YOU HAVEN’T made any changes to your repository), it should look like this.</p>
+<p><img src="media/git-tab.png" class="img-fluid"></p>
+<p>Now go open up the file <code>homework.md</code> and look at it. It should look like this.</p>
+<p><img src="media/hw.png" class="img-fluid"></p>
+<p>Now, when you edit this file, it will show up as changed in the Git panel. Replace the <code>YOUR NAME HERE</code> part with your actual name and then save the file. Notice in the Git Pane it now lists that file as changed.</p>
+<p><img src="media/hw1.png" class="img-fluid"></p>
+<p>This file is not <em>staged</em> (e.g., it is not set up to be commited yet). If we select the file in the pane and hit the <em>Diff</em> button just above it, a Diff window shows us the actual changes that were made to that file.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/diff.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The red highligh shows that line 3 was remvoed and the green one shows that the 3rd line was replaced with the new content. Everything else in the file is left as it was.</figcaption><p></p>
+</figure>
+</div>
+<p>So now, let’s commit this file by staging it (click the box). If you are doing this in the Git pane, then hit the commit button and it will pop up your Diff window. At the top of the Diff window, you will see a box for a commit message. This is an important message <strong>to you</strong> about what the changes you are making and how they impact the file. It is *in your own best interested (e.g., so that future you does not hate present you), to put meaningful stuff into this message box.</p>
+<p>So now you can push the changes (denoted by each Commit) back up to the GitHub Repository by pressing the <em>Push</em> button. Once it is pushed up, you should be good.</p>
+</section>
+<section id="github-classroom" class="level2">
+<h2 class="anchored" data-anchor-id="github-classroom">GitHub Classroom</h2>
+<p>The GitHub Classroom will allow the instructor to interact with you on your repositories. Each homework assignment will be created there and you’ll be sent a link. You’ll <em>Clone</em> the repository and then work on the content. When you <em>Commit</em> and <em>Push</em> it back to GitHub Classroom, the instructor can then see and comment on it. If additional changes need to be made, you’ll have to <em>Pull</em> down those changes to update your local copy.</p>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<p>If you have any questions for me specifically on this topic, please post as an Issue in your repository, otherwise consider posting to the discussion board on <a href="https://canvas.vcu.edu">Canvas</a>.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
