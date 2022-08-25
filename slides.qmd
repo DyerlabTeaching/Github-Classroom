@@ -292,5 +292,10 @@ If you have any questions, please feel free to either post them as an "Issue" on
 
 :::
 
+&nbsp;
+
+Return to the [GitHub Repository](https://github.com/DyerlabTeaching/Github-Classroom).
+
+
 
 

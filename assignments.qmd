@@ -28,3 +28,11 @@ To add a new assignment, follow these steps.
 ![](media/Assignment5.png)
 
 You now have an assignment uploaded and ready for deployment.
+
+
+&nbsp;
+
+---
+
+Return to the [GitHub Repository](https://github.com/DyerlabTeaching/Github-Classroom).
+

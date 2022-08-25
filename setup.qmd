@@ -56,3 +56,12 @@ If there are subsequent back-and-forth that needs to happen, you'll do the same 
 -   Push with message
 
 The GitHub Repository becomes something that is share between you and the instructor and you can work collaboratively on it.
+
+
+
+&nbsp;
+
+---
+
+Return to the [GitHub Repository](https://github.com/DyerlabTeaching/Github-Classroom).
+

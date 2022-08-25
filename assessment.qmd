@@ -72,3 +72,12 @@ In the same pane, there is also a button labeled "History"
 which has the push/pull history in it with all the comments as well.  Anyone with an updated pull on the repository will have all these comments.
 
 ![](media/Assignment19.png)
+
+
+&nbsp;
+
+---
+
+Return to the [GitHub Repository](https://github.com/DyerlabTeaching/Github-Classroom).
+
+
